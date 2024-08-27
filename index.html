@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+		<link rel="stylesheet" href="styles.css" />
+
+</head>
+<body>
+	<div class="container">
+	   <header class="header">
+		<h1 id="title" class="text-center">Travel Survey Form</h1>
+		<p id="description" class="description text-center">
+			Thank you for taking the time to help us improve the platform.
+		</p>
+	   </header>
+
+	<form id="survey-form">
+		<div class="form-group">
+			<label id="name-label" for="name">Name</label>
+			<input type="text" name="name" class="form-control" placeholder="Enter your name" required />
+		</div>
+		<div class="form-group">
+			<label id="email-label" for="email">Email</label>
+			<input type="email" name="email" id="email" class="form-control" placeholder="Enter your Email" required />	
+	
+	    </div>	
+		<div class="form-group">
+			<label id="number-label" for="number">Age<span class="clue">(optional)</span></label>
+			<input type="number" name="age" id="number" min="10" max="99" class="form-control" placeholder="Age" />
+		</div>
+		<div class="form-group">
+			<p>Which option best describes your current role?</p>
+			<select id="dropdown" name="role" class="form-control" required>
+				<option disabled selected value>Select current role</option>
+				<option value="student">Student</option>
+				<option value="job">Full Time Job</option>
+				<option value="learner">Full Time Learner</option>
+				<option value="preferNo">Prefer not to say</option>
+				<option value="other">Other</option>
+			</select>	
+		</div>	
+	
+		<div class="form-group">
+			<p>Would you recommend this airline to a friend?</p>
+			<label>
+				<input name="user-recommend" value="definitely" type="radio" checked />Definitely
+			</label>
+			<label>
+			<input name="user-recommend" value="maybe" type="radio" class="input-radio"/>Maybe
+			</label>
+			<label>
+			<input name="user-recommend" value="not-sure" type="radio" class="input-radio"/>Not sure
+			</label>			
+		</div>
+		
+		<div class="form-group">
+			<p>What is your favorite feature of airline?</p>
+			<select id="most-like" name="mostLike" class="form-control" required>
+				<option disabled selected value>Select an option</option>
+				<option value="customerservice">Customer Service</option>
+				<option value="comfortAndSpace">Comfort and Space</option>
+				<option value="greatprice">Great Price</option>
+				<option value="entertainment">Entertainment</option>
+			</select>
+		</div>
+		<div class="form-group">
+		<p>What would you like to see improve?
+		<span class="clue">(Check all that apply)</span>
+		</p>
+		
+		<label>
+		<input name="prefer" value="Seating-Space in economy" type="checkbox" class="input-checkbox"/>Seating Space in economy
+		</label>
+		<label>
+		<input name="prefer" value="redesign overhead baggage cabins" type="checkbox" class="input-checkbox"/>Redesign overhead cabins size
+		</label>
+		<label>
+		<input name="prefer" value="healthier inflight meals" type="checkbox" class="input-checkbox"/>Healthier inflight meals
+		</label>
+		<label>
+		<input name="prefer" value="bigger bathroom" type="checkbox" class="input-checkbox"/>Bigger bathrooms
+		</label>
+		<label>
+		<input name="prefer" value="better luggage tracking" type="checkbox" class="input-checkbox"/>Better Luggage tracking
+		</label>
+		<label>
+		<input name="prefer" value="better-customer service" type="checkbox" class="input-checkbox"/>Better Customer Service
+		</label>
+		<label>
+		<input name="prefer" value="Good inflight wi-fi" type="checkbox" class="input-checkbox"/>Good Inflight Wi-fi
+		</label>
+		<label>
+		<input name="prefer" value="waiting-area" type="checkbox" class="input-checkbox"/>Waiting Area
+		</label>
+		<label>
+		<input name="prefer" value="wiki" type="checkbox" class="input-checkbox"/>Wiki
+		</label>
+		<label>
+		<input name="prefer" value="forum" type="checkbox" class="input-checkbox"/>Forum
+		</label>
+		<label>
+			<input name="prefer" value="connectiontime" type="checkbox" class="input-checkbox"/>Better Connection Time
+			</label>
+		</div>
+
+		<div class="form-group">
+			<p>Any comments or suggestions?</p>
+			<textarea id="comments" class="input-textarea" name="comment" placeholder="Enter your comment here...">
+			</textarea>
+		</div>	
+	
+		<div class="form-group">
+			<button type="submit" id="submit" class="submit-button">
+			Submit
+			</button>
+		</div>
+    </form>	
+  </div>
+</body>
+
+
+
+
+
+</html>
